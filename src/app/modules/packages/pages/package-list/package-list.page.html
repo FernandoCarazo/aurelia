@@ -1,0 +1,11 @@
+<div class="padding">
+    <div class="gallery">
+        <div *ngFor="let travelPackage of packages">
+            <figure>
+                <img src="{{travelPackage.img}}" />
+            </figure>
+            <h3>{{travelPackage.title}}</h3>
+            <p>{{ travelPackage.price }}</p>
+        </div>
+    </div>
+</div>

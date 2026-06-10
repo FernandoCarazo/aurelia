@@ -1,0 +1,62 @@
+body {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+fa-icon {
+    font-size: 6rem;
+    color: black;
+    background-color: whitesmoke;
+    border-radius: 2rem;
+}
+
+.book-link {
+    margin: 20px;
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+h3 {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+p {
+    margin: 10px;
+}
+
+.page-header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.destination-cover {
+    max-height: 626px;
+    max-width: 572px;
+}
+
+.itinerary-day {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        padding-left: 0%;
+        padding-right: 0%;
+        width: 100%;
+    }
+
+    .destination-cover {
+        max-height: 350px;
+        max-width: 350px;
+    }
+}

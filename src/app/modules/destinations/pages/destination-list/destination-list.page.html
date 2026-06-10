@@ -1,0 +1,8 @@
+<div class="padding">
+    <div class="gallery">
+        <div *ngFor="let destination of destinations">
+            <a [routerLink]="[destination.id]"><img src="{{ destination.img }}"></a>
+            <p>{{ destination.title }}</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+  opacity: 1;
+}
+
+a img:hover {
+  opacity: 0.5;
+}
+
+h3 {
+  margin-top: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+p {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}

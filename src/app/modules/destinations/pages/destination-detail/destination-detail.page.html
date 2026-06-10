@@ -1,0 +1,32 @@
+<div class="padding">
+
+    <body>
+        <div *ngIf="destination">
+            <div class="page-header">
+                <h1>{{ destination.title }}</h1>
+                <img src="{{ destination.img }}" class="destination-cover">
+                <h2>Book this journey: {{ destination.title }}</h2>
+                <a href={{destination.bookUrl}} class="book-link"><fa-icon [icon]="faPlaneDeparture"></fa-icon></a>
+            </div>
+
+            <div class="destination-details">
+                <p>-{{ destination.type }} · {{ destination.duration }} · {{ destination.priceFrom }}</p>
+                <p>-{{ destination.description }}</p>
+            </div>
+        </div>
+
+
+        <div class="itinerary">
+            <ul>
+                <li class="itinerary-day" *ngFor="let day of itinerary">
+                    <h3>{{ day.number }}. {{ day.title.toUpperCase() }}</h3>
+                    <p style="white-space: pre-line;">
+                        {{ day.description }}
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+    </body>
+
+</div>

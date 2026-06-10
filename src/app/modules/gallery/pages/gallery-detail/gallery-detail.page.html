@@ -1,0 +1,14 @@
+<div class="padding">
+    <div class="gallery">
+        <ul>
+            <div *ngIf="gallery">
+                <h1>{{ gallery.title }}</h1>
+                <p>{{ gallery.description }}</p>
+            </div>
+
+            <li class="gallery-photo" *ngFor="let photo of photos">
+                <img src="{{photo.src}}">
+            </li>
+        </ul>
+    </div>
+</div>

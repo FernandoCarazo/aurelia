@@ -1,0 +1,15 @@
+<div class="padding">
+    <div class="gallery">
+        <div class="gallery-list">
+            <div *ngFor="let gallery of galleries">
+                <a [routerLink]="[gallery.id]">
+                    <h1>{{ gallery.title }}</h1>
+                </a>
+                <a [routerLink]="[gallery.id]">
+                    <p>{{ gallery.date }}</p>
+                </a>
+                <a [routerLink]="[gallery.id]"><img src="{{gallery.img1}}"></a>
+            </div>
+        </div>
+    </div>
+</div>

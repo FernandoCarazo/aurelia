@@ -1,0 +1,18 @@
+<svg viewBox="0 0 520 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Aurelia — Luxury Travel">
+  <defs>
+    <linearGradient id="aureliaGold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F3D27A"/>
+      <stop offset="0.5" stop-color="#D4AF37"/>
+      <stop offset="1" stop-color="#B8860B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Compass / North Star mark -->
+  <circle cx="90" cy="90" r="62" fill="none" stroke="url(#aureliaGold)" stroke-width="2.5" opacity="0.55"/>
+  <path d="M90,38 L100,80 L134,90 L100,100 L90,142 L80,100 L46,90 L80,80 Z" fill="url(#aureliaGold)"/>
+  <circle cx="90" cy="90" r="5" fill="#FFFFFF" opacity="0.85"/>
+
+  <!-- Wordmark (ivory — designed to sit on a navy background) -->
+  <text x="185" y="96" font-family="'Playfair Display', Georgia, serif" font-weight="600" font-size="56" letter-spacing="6" fill="#F7F3EA">AURELIA</text>
+  <text x="187" y="126" font-family="'Montserrat', Arial, sans-serif" font-weight="500" font-size="14" letter-spacing="9" fill="#C9A24B">LUXURY TRAVEL</text>
+</svg>

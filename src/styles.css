@@ -1,0 +1,34 @@
+@import './assets/css/theme-dark.css';
+@import './assets/css/reset.css';
+
+html {
+    font-size: 10px;
+    height: 100%;
+}
+
+body {
+    font-family: 'Lato', Helvetica, sans-serif;
+    font-size: 1.5rem;
+    background: rgb(5, 5, 5);
+    color: var(--main-text-color);
+    scrollbar-color: var(--color-scrollbar-light) var(--color-scrollbar-light);
+    scrollbar-width: thin;
+}
+
+.padding {
+    padding-top: 250px;
+    padding-bottom: 80px;
+    display: flex;
+    min-height: 75vh;
+    flex-direction: column;
+    margin-top: auto;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--color-scrollbar-light);
+}
+
+body::-webkit-scrollbar {
+    width: 0.7rem;
+    background: var(--color-scrollbar-light);
+}
