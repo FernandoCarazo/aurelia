@@ -1,27 +1,71 @@
-# Aurelia Luxury Travel
+# Aurelia — Luxury Travel
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.0.
+A luxury travel website concept built with **Angular 16**. It showcases curated destinations, day-by-day itineraries, travel packages, and photo galleries through a clean, dark-themed interface.
 
-## Development server
+> **Live demo:** https://fernandocarazo.github.io/aurelia/
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<!-- Tip: add a screenshot or GIF of the app here — it makes a big difference!
+![Aurelia screenshot](docs/screenshot.png) -->
 
-## Code scaffolding
+## About this project
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+I built Aurelia as a personal project for two reasons:
+
+1. **To practice my frontend skills** — component architecture, routing, lazy-loaded feature modules, and responsive layouts in Angular.
+2. **To learn how to deploy a website to GitHub Pages** — taking a project all the way from local development to a live, public URL.
+
+Honestly, it was a really fun project to build and I learned a lot along the way. The best part came after: once I figured out how to publish a site on GitHub Pages, I was able to help a friend who didn't even know that was possible. Walking him through the whole process step by step taught me even more than doing it on my own. I find that sometimes explaining something is the best way to really understand it!
+
+## Features
+
+- **Destinations** with detailed, day-by-day itineraries
+- **Travel packages** (family, couples, honeymoon)
+- **Photo galleries** organized by destination
+- **Dark themed** and a responsive, mobile-friendly layout
+
+## Tech stack
+
+- [Angular](https://angular.io/) 16 + TypeScript
+- Angular Router (lazy-loaded modules)
+- [Font Awesome](https://fontawesome.com/) & [ng-icons](https://ng-icons.github.io/ng-icons/) for icons
+- Plain CSS with CSS custom properties (theming)
+- [gh-pages](https://www.npmjs.com/package/gh-pages) for deployment
+
+## Getting started
+
+### Prerequisites
+- [Node.js](https://nodejs.org/) (LTS recommended)
+- [Angular CLI](https://github.com/angular/angular-cli): `npm install -g @angular/cli`
+
+### Install & run
+```bash
+# 1. Clone the repository
+git clone https://github.com/FernandoCarazo/aurelia.git
+cd aurelia
+
+# 2. Install dependencies
+npm install
+
+# 3. Start the dev server
+npm start
+```
+Then open **http://localhost:4200/**. The app reloads automatically when you change a source file.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```bash
+npm run build
+```
+The production build is generated in the `build/` directory.
 
-## Running unit tests
+## Deployment (GitHub Pages)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+This is the part I set out to learn. Deploying is a single command:
 
-## Running end-to-end tests
+```bash
+npm run deploy
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Under the hood this runs `npm run build` and then publishes the `build/` folder to the `gh-pages` branch using the [`gh-pages`](https://www.npmjs.com/package/gh-pages) package. GitHub then serves it at the live URL above.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+> The app uses hash-based routing (`useHash: true`) so that client-side routes work correctly on GitHub Pages without extra server configuration.
