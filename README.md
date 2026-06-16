@@ -4,8 +4,8 @@ A luxury travel website concept built with **Angular 16**. It showcases curated 
 
 > **Live demo:** https://fernandocarazo.github.io/aurelia/
 
-<!-- Tip: add a screenshot or GIF of the app here — it makes a big difference!
-![Aurelia screenshot](docs/screenshot.png) -->
+<img width="3200" height="1612" alt="Screenshot From 2026-06-16 17-04-09" src="https://github.com/user-attachments/assets/338e8dd1-264e-4343-84dc-9e7ecf87e2fd" />
+
 
 ## About this project
 
